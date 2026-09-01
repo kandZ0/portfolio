@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kandZ0 — Digital Designer & Web Creator</title>
+  <meta name="description" content="Личное портфолио kandZ0. Создание визуальных решений, интерфейсов и цифровых продуктов — от идеи до реализации.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@600;700&family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    /* Стили промо-баннера вместо стандартного текста */
+    .hero-banner-box {
+      margin-top: 2rem;
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: linear-gradient(180deg, rgba(13, 13, 14, 0.45) 0%, rgba(13, 13, 14, 0.95) 100%), 
+                  url('assets/images/branding/logo banner.png') center/cover no-repeat;
+      padding: 3.5rem 2.5rem 2.5rem 2.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      min-height: 420px;
+      transition: border-color 0.3s ease, transform 0.3s ease;
+    }
+    .hero-banner-box:hover {
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+    .hero-brand-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    /* Фирменный логотип с черной дырой */
+    .hero-logo-icon {
+      width: 44px;
+      height: 44px;
+      flex-shrink: 0;
+      color: #fff;
+    }
+    .hero-banner-title {
+      font-family: var(--font-head);
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      line-height: 1.15;
+      color: #fff;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">kandZ0</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Главная</a></li>
+          <li><a href="work.html">Работы</a></li>
+          <li><a href="about.html">Обо мне</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        
+        <!-- БАННЕР С ЛОГОТИПОМ -->
+        <div class="hero-banner-box">
+          <div class="hero-tag" style="width: fit-content; margin-bottom: 1rem;">Открыт к проектам и предложениям</div>
+          
+          <div class="hero-brand-header">
+            <!-- Векторный логотип: Черная дыра на букве A -->
+                <div class="hero-brand-header">
+                    <img src="assets/images/branding/logoРесурс 54.png" alt="kandZ0 Logo" class="hero-logo-icon" style="object-fit: contain;">
+                </div>
+            <h1 class="hero-banner-title">Визуальное мышление → Дизайн → Веб-разработка</h1>
+          </div>
+
+          <p class="hero-desc" style="max-width: 680px;">Создаю айдентику, цифровые интерфейсы и веб-продукты — от первоначальной концепции до полноценной технической реализации.</p>
+          
+          <div class="hero-cta" style="margin-top: 1.5rem;">
+            <a href="work.html" class="btn btn-primary">Смотреть архив работ</a>
+            <a href="projects/artplatform.html" class="btn btn-secondary">Кейс ArtPlatform</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="container" style="padding-top: 4rem;">
+      <div class="section-header">
+        <h2 class="section-title">Избранные проекты</h2>
+        <a href="work.html" style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted);">Перейти в архив →</a>
+      </div>
+
+      <div class="grid">
+        <article class="card card-hero">
+          <a href="projects/artplatform.html">
+            <div class="card-image-wrap">
+              <img src="assets/images/artplatform/hero-mockup.jpg" alt="Превью кейса ArtPlatform" loading="lazy" onerror="this.src='https://placehold.co/1200x675/141416/FFFFFF?text=IMAGE_PLACEHOLDER_ARTPLATFORM_HERO'">
+            </div>
+            <div class="card-meta">
+              <div>
+                <h3 class="card-title">ArtPlatform — Веб-платформа для цифровых художников</h3>
+                <span class="card-category">Продуктовый дизайн / Веб-разработка</span>
+              </div>
+              <span class="card-year">2026</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="card card-half">
+          <a href="work.html">
+            <div class="card-image-wrap">
+              <img src="assets/images/graphic/Tarkov.png" alt="Цифровое искусство" loading="lazy" onerror="this.src='https://placehold.co/800x500/141416/FFFFFF?text=IMAGE_PLACEHOLDER_ART_01'">
+            </div>
+            <div class="card-meta">
+              <div>
+                <h3 class="card-title">Escape Visual Identity Composition</h3>
+                <span class="card-category">GRAPHIC DESIGN</span>
+              </div>
+              <span class="card-year">2026</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="card card-half">
+          <a href="work.html">
+            <div class="card-image-wrap">
+              <img src="assets/images/art/SHH Inner Noise Compression.png" alt="Концепт визуальной идентичности" loading="lazy" onerror="this.src='https://placehold.co/800x500/141416/FFFFFF?text=IMAGE_PLACEHOLDER_BRANDING_01'">
+            </div>
+            <div class="card-meta">
+              <div>
+                <h3 class="card-title">Digital Overdose</h3>
+                <span class="card-category">DIGITAL ART</span>
+              </div>
+              <span class="card-year">2025</span>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-text">© 2026 kandZ0. Подготовлено для GitHub Pages.</span>
+      <span class="footer-text">Идея → Дизайн → Реализация</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
