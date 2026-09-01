@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArtPlatform — Кейс разработки | kandZ0</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@600;700&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">kandZ0</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html">Главная</a></li>
+          <li><a href="../work.html" class="active">Работы</a></li>
+          <li><a href="../about.html">Обо мне</a></li>
+          <li><a href="../contact.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="case-study-hero">
+      <span style="font-family: var(--font-mono); color: var(--text-muted); text-transform: uppercase;">Флагманский веб-продукт</span>
+      <h1 style="font-family: var(--font-head); font-size: clamp(2.5rem, 5vw, 4rem); margin-top: 0.5rem;">ArtPlatform</h1>
+      <p style="font-size: 1.25rem; color: var(--text-muted); max-width: 750px; margin-top: 1rem;">
+        Самостоятельно разработанная платформа для цифровых художников, сфокусированная на публикации работ, социальном взаимодействии и демонстрации полного процесса создания арта.
+      </p>
+
+      <div class="case-meta-grid">
+        <div class="case-meta-item">
+          <label>Моя роль</label>
+          <span>Концепция, UX/UI дизайн, Frontend & Backend верстка и логика</span>
+        </div>
+        <div class="case-meta-item">
+          <label>Технологии</label>
+          <span>PHP, MySQL, JavaScript, CSS3, HTML5</span>
+        </div>
+        <div class="case-meta-item">
+          <label>Год</label>
+          <span>2026</span>
+        </div>
+        <div class="case-meta-item">
+          <label>Фича</label>
+          <span>Process Passport Timeline</span>
+        </div>
+      </div>
+
+      <div class="card-image-wrap" style="aspect-ratio: 16 / 9; margin: 2rem 0 4rem;">
+        <img src="../assets/images/artplatform/hero-mockup.jpg" alt="ArtPlatform Интерфейс" onerror="this.src='https://placehold.co/1200x675/141416/FFFFFF?text=IMAGE_PLACEHOLDER_ARTPLATFORM_MAIN_MOCKUP'">
+      </div>
+    </section>
+
+    <section class="content-block" style="max-width: 800px;">
+      <h3>01. Концепция и проблематика</h3>
+      <p style="margin-bottom: 1.5rem; color: var(--text-muted);">
+        Большинство современного портфолио-сервисов фокусируются только на финальном результате, полностью скрывая трудоёмкий процесс и технику автора. ArtPlatform был создан, чтобы дать авторам удобный инструмент демонстрации как итогового произведения, так и пошаговой истории его создания.
+      </p>
+    </section>
+
+    <section class="content-block">
+      <h3>02. Ключевой функционал</h3>
+      <div class="grid" style="margin-top: 2rem;">
+        <div class="card card-third" style="padding: 1.5rem;">
+          <h4 style="font-family: var(--font-head); margin-bottom: 0.5rem;">Process Passport</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Интерактивный таймлайн процесса, позволяющий наглядно прикреплять этапы работы.</p>
+        </div>
+        <div class="card card-third" style="padding: 1.5rem;">
+          <h4 style="font-family: var(--font-head); margin-bottom: 0.5rem;">Социальный граф</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Профили пользователей, система подписок, лайки, комментарии и уведомления.</p>
+        </div>
+        <div class="card card-third" style="padding: 1.5rem;">
+          <h4 style="font-family: var(--font-head); margin-bottom: 0.5rem;">Explore & Discovery</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Удобная галерея без лишнего визуального шума для комфортного просмотра изображений высокое разрешения.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-block" style="background: var(--panel-bg); padding: 3rem; border: 1px solid var(--border-color);">
+      <h3 style="margin-bottom: 1rem;">Логика Process Passport</h3>
+      <p style="color: var(--text-muted); margin-bottom: 2rem;">Как устроена визуализация поэтапного процесса работы:</p>
+      
+      <div style="display: flex; gap: 1rem; justify-content: space-between; flex-wrap: wrap; text-align: center; font-family: var(--font-mono); font-size: 0.85rem;">
+        <div style="flex: 1; min-width: 140px; background: var(--bg-color); padding: 1.5rem; border: 1px solid var(--border-color);">
+          01. ИДЕЯ
+        </div>
+        <div style="display: flex; align-items: center; color: var(--text-muted);">→</div>
+        <div style="flex: 1; min-width: 140px; background: var(--bg-color); padding: 1.5rem; border: 1px solid var(--border-color);">
+          02. НАБРОСОК
+        </div>
+        <div style="display: flex; align-items: center; color: var(--text-muted);">→</div>
+        <div style="flex: 1; min-width: 140px; background: var(--bg-color); padding: 1.5rem; border: 1px solid var(--border-color);">
+          03. В ПРОЦЕССЕ (WIP)
+        </div>
+        <div style="display: flex; align-items: center; color: var(--text-muted);">→</div>
+        <div style="flex: 1; min-width: 140px; background: var(--bg-color); padding: 1.5rem; border: 1px solid var(--border-color);">
+          04. ФИНАЛ
+        </div>
+      </div>
+    </section>
+
+    <section class="content-block">
+      <h3>03. Интерфейс системы</h3>
+      <div class="grid" style="margin-top: 1.5rem;">
+        <div class="card card-half">
+          <img src="../assets/images/artplatform/screen-explore.jpg" alt="Раздел Explore" onerror="this.src='https://placehold.co/800x500/141416/FFFFFF?text=IMAGE_PLACEHOLDER_ARTPLATFORM_EXPLORE'">
+        </div>
+        <div class="card card-half">
+          <img src="../assets/images/artplatform/screen-profile.jpg" alt="Страница профиля" onerror="this.src='https://placehold.co/800x500/141416/FFFFFF?text=IMAGE_PLACEHOLDER_ARTPLATFORM_PROFILE'">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="../work.html" style="font-family: var(--font-mono); font-size: 0.85rem;">← Вернуться в архив работ</a>
+      <span class="footer-text">kandZ0 — ArtPlatform Case Study</span>
+    </div>
+  </footer>
+
+</body>
+</html>
